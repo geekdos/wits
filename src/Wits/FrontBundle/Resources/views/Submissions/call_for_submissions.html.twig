@@ -1,0 +1,32 @@
+{% extends "::base.html.twig" %}
+{% block title %}-
+    Submissions
+{% endblock %}
+{% block body %}
+    {% if submissions != null %}
+        <!-- START PANEL WITH CONTROL CLASSES -->
+        {% for submission in submissions %}
+            <div class="col-md-6">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{ submission.name }}</h3>
+                        <ul class="panel-controls">
+                            <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                            <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        {{ submission.content | raw }}
+                    </div>
+                    <div class="panel-footer">
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <!-- END PANEL WITH CONTROL CLASSES -->
+    {% else %}
+        <h1 class="text-danger">Submission not founded</h1>
+    {% endif %}
+{% endblock %}

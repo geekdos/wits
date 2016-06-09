@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+{% block title %}
+    {% if committee != false %}
+        - {{ committee.name }}
+    {% else %}
+        - Committee
+    {% endif %}
+{% endblock %}
+{% block body %}
+    {% include 'WitsFrontBundle:Includes:committee.html.twig' %}
+{% endblock %}

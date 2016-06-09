@@ -1,0 +1,31 @@
+{% if committee != null %}
+<h1>{{ committee.name }}</h1>
+<div class="row">
+    <div class="col-md-12">
+        <!-- Committee Member -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Committee Members</h3>
+            </div>
+            <div class="panel-body list-group list-group-contacts">
+                {% for membre in committee.members %}
+                    <a href="#" class="list-group-item">
+                        <img src="{{ asset('bundles/wits/assets/images/users/no-image.jpg') }}" class="pull-left" alt="{{ membre.getLastName()~' '~membre.getFirstName() }}"/>
+                        <span class="contacts-title">{{ membre.getLastName()~' '~membre.getFirstName() }}</span>
+                        <p>{{
+                            membre.getSchool()~', '~
+                            membre.getSchool().getUniversity()~', '~
+                            membre.getSchool().getUniversity().getCity()~', '~
+                            membre.getSchool().getUniversity().getCity().getCountry()
+                            }}
+                        </p>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End Committee Member -->
+    </div>
+</div>
+{% else %}
+    <h1 class="text-danger">No committee founded</h1>
+{% endif %}

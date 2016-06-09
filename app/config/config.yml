@@ -1,0 +1,82 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+    - { resource: "@WitsFrontBundle/Resources/config/services.yml" }
+    - { resource: "@WitsBackBundle/Resources/config/services.yml" }
+    - { resource: "@WitsUserBundle/Resources/config/services.yml" }
+    - { resource: "fos/fos_user.yml" }
+    - { resource: "knp/knp_menu.yml" }
+    - { resource: "sonata-project/sonata_admin.yml" }
+    - { resource: "sonata-project/sonata_core.yml" }
+    - { resource: "sonata-project/sonata_block.yml" }
+    - { resource: "sonata-project/sonata_media.yml" }
+    - { resource: "sonata-project/sonata_formatter.yml" }
+
+parameters:
+    locale: fr
+    edition: 3
+    # Sonata Admin Options
+    sonata_admin.title:             WITS
+    sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
+
+    # Sonata Media options
+    sonata_media.cdn.host:          /uploads/media
+
+
+framework:
+    #esi:             ~
+    #translator:      { fallbacks: ["%locale%"] }
+    translator: ~
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # handler_id set to null will use default session handler from php.ini
+        handler_id:  ~
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    globals:
+        committeesName: name
+        witsEdition: "%edition%"
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        types:
+            json: Sonata\Doctrine\Types\JsonType
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }

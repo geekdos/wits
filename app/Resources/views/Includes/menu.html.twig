@@ -1,0 +1,94 @@
+<!-- START X-NAVIGATION VERTICAL -->
+<ul class="x-navigation x-navigation-horizontal">
+    <li class="xn-navigation-control">
+        <a href="#" class="x-navigation-control"></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_homepage') }}"><span class="fa fa-home"></span> <span
+                    class="xn-text">Home</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="#">
+            <span class="fa fa-users"></span>
+            <span class="xn-text">Committees</span>
+        </a>
+        <ul class="animated zoomIn">
+            <li>
+                <a href="{{ path('wits_front_general_chairs') }}">
+                    General Chairs
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_honorary_committee') }}">
+                    Honorary Committee
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_steering_committee_chairs') }}">
+                    Steering Committee
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_program_committee_chairs') }}">
+                    Program Committee Chairs
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_publicity_and_communication_chairs') }}">
+                    Pub and Communication Chairs
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_finance_chairs') }}">
+                    Finance Chairs
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_posters_chairs') }}">
+                    Posters Chairs
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_organizing_committee') }}">
+                    Organizing Committee
+                </a>
+            </li>
+            <li>
+                <a href="{{ path('wits_front_technical_program_committee') }}">
+                    Technical program Committee
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_call_for_submissions') }}"><span class="fa fa-phone"></span> <span
+                    class="xn-text">Call For Submissions</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_program') }}"><span class="fa fa-list-alt"></span> <span class="xn-text">Program</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_registration') }}"><span class="fa fa-pencil"></span> <span
+                    class="xn-text">Registration</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_information') }}"><span class="fa fa-info"></span> <span
+                    class="xn-text">Information</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_sponsorship', {'edition': 20   }) }}"><span class="fa fa-building"></span> <span
+                    class="xn-text">Sponsorship</span></a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_contact') }}"><span class="fa fa-envelope"></span> <span
+                    class="xn-text">Contact-us</span></a>
+    </li>
+    <!-- SEARCH -->
+    <li class="xn-search pull-right">
+        <form role="form">
+            <input type="text" name="search" placeholder="Search..."/>
+        </form>
+    </li>
+    <!-- END SEARCH -->
+</ul>
+<!-- END X-NAVIGATION VERTICAL -->

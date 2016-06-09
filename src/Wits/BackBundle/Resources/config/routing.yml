@@ -1,0 +1,3 @@
+wits_back_homepage:
+    path:     /
+    defaults: { _controller: WitsBackBundle:Default:index }

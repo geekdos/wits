@@ -1,0 +1,112 @@
+{% extends '::base.html.twig' %}
+{% block slider %}
+    <!-- START slider -->
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url("{{ asset("bundles/wits/img/slider/loading.gif") }}") no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" class="slides-data">
+                <img data-u="image" src="{{ asset("bundles/wits/img/slider/slider_1.jpg") }}" />
+                <div class="slide-title" >WITS 2017</div>
+                <div class="slide-description">
+                    20th Edition of International ConferenceOn Wireless Technologies embedded and intelligent Systems
+                </div>
+            </div>
+            <div data-p="225.00" class="slides-data">
+                <img data-u="image" src="{{ asset("bundles/wits/img/slider/slider_2.jpg") }}" />
+                <div class="slide-title" >WITS 2017</div>
+                <div class="slide-description">
+                    20th Edition of International ConferenceOn Wireless Technologies embedded and intelligent Systems
+                </div>
+            </div>
+            <div data-p="225.00" class="slides-data">
+                <img data-u="image" src="{{ asset("bundles/wits/img/slider/slider_3.jpg") }}" />
+                <div class="slide-title" >WITS 2017</div>
+                <div class="slide-description">
+                    20th Edition of International ConferenceOn Wireless Technologies embedded and intelligent Systems
+                </div>
+            </div>
+            <div data-p="225.00" class="slides-data">
+                <img data-u="image" src="{{ asset("bundles/wits/img/slider/slider_4.jpg") }}" />
+                <div class="slide-title" >WITS 2017</div>
+                <div class="slide-description">
+                    20th Edition of International ConferenceOn Wireless Technologies embedded and intelligent Systems
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- END slider -->
+{% endblock %}
+{% block page_title_icon %} fa-tags{% endblock %}
+
+{% block body %}
+    <h1><i class="fa fa-newspaper-o"></i> NEWS AND ANNOUNCEMENTS</h1>
+    {{ dump(app.request) }}
+{% endblock %}
+{% block javascripts %}
+    <!-- THIS PAGE PLUGINS -->
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/icheck/icheck.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("bundles/wits/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js") }}"></script>
+    <!-- END PAGE PLUGINS -->
+
+    <!-- START THIS PAGE PLUGINS-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js") }}"></script>
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js") }}"></script>
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/jvectormap/jquery-jvectormap-europe-mill-en.js") }}"></script>
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/jvectormap/jquery-jvectormap-us-aea-en.js") }}"></script>
+    <script type='text/javascript' src="{{ asset("bundles/wits/js/plugins/icheck/icheck.min.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("bundles/wits/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js") }}"></script>
+    <!-- END THIS PAGE PLUGINS-->
+    <script type="text/javascript" src="{{ asset("bundles/wits/js/jssor.slider.mini.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("bundles/wits/js/slider.js") }}"></script>
+    <script type="text/javascript">
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/slider/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+         .jssora22l                  (normal)
+         .jssora22r                  (normal)
+         .jssora22l:hover            (normal mouseover)
+         .jssora22r:hover            (normal mouseover)
+         .jssora22l.jssora22ldn      (mousedown)
+         .jssora22r.jssora22rdn      (mousedown)
+         */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url("{{ asset("bundles/wits/img/slider/a22.png") }}"+) center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </script>
+{% endblock %}

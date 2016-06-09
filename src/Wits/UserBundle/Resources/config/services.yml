@@ -1,0 +1,4 @@
+services:
+#    wits_user.example:
+#        class: Wits\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

@@ -1,0 +1,76 @@
+wits_front_homepage:
+    path:     /
+    defaults: { _controller: WitsFrontBundle:Default:index }
+
+wits_front_general_chairs:
+    path:     /generalChairs
+    defaults: { _controller: WitsFrontBundle:Committee:generalChairs }
+
+wits_front_honorary_committee:
+    path:     /honoraryCommittee
+    defaults: { _controller: WitsFrontBundle:Committee:honoraryCommittee }
+
+wits_front_steering_committee_chairs:
+    path:     /steeringCommitteeChairs
+    defaults: { _controller: WitsFrontBundle:Committee:steeringCommitteeChairs }
+
+wits_front_program_committee_chairs:
+    path:     /programCommitteeChairs
+    defaults: { _controller: WitsFrontBundle:Committee:programCommitteeChairs }
+
+wits_front_publicity_and_communication_chairs:
+    path:     /publicityAndCommunicationChairs
+    defaults: { _controller: WitsFrontBundle:Committee:publicityAndCommunicationChairs }
+
+wits_front_finance_chairs:
+    path:     /financeChairs
+    defaults: { _controller: WitsFrontBundle:Committee:financeChairs }
+
+wits_front_organizing_committee:
+    path:     /organizingCommittee
+    defaults: { _controller: WitsFrontBundle:Committee:organizingCommittee }
+
+wits_front_technical_program_committee:
+    path:     /technicalProgramCommittee
+    defaults: { _controller: WitsFrontBundle:Committee:technicalProgramCommittee }
+
+wits_front_posters_chairs:
+    path:     /postersChairs
+    defaults: { _controller: WitsFrontBundle:Committee:postersChairs }
+
+wits_front_call_for_submissions:
+    path:     /callForSubmissions
+    defaults: { _controller: WitsFrontBundle:Submissions:callForSubmissions }
+
+wits_front_program:
+    path:     /program
+    defaults: { _controller: WitsFrontBundle:Program:program }
+
+wits_front_registration:
+    path:     /registration
+    defaults: { _controller: WitsFrontBundle:Registration:registration }
+
+wits_front_information:
+    path:     /informations
+    defaults: { _controller: WitsFrontBundle:Informations:informations }
+
+wits_front_venue:
+    path:     /venue
+    defaults: { _controller: WitsFrontBundle:Informations:venue }
+
+wits_front_traveling_to_avenus:
+    path:     /travelingToAvenus
+    defaults: { _controller: WitsFrontBundle:Informations:travelingToAvenus }
+
+wits_front_hotels:
+    path:     /hotels
+    defaults: { _controller: WitsFrontBundle:Informations:hotels }
+
+
+wits_front_contact:
+    path:     /contact
+    defaults: { _controller: WitsFrontBundle:Contact:contact }
+
+wits_front_sponsorship:
+    path:     /sponsorship/{edition}
+    defaults: { _controller: WitsFrontBundle:Sponsorship:sponsorship }

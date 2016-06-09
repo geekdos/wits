@@ -1,0 +1,2 @@
+sonata_timeline:
+    manager_type:         orm

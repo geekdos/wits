@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+{% block title %}-
+    {% if program != null  %}
+        {{ program.name }}
+        {% else %}
+        Program not founded
+    {% endif %}
+{% endblock %}
+{% block body %}
+    {% if program != null %}
+        <h1>{{ program.name }}</h1>
+        {{ program.content | raw }}
+        {% else %}
+            <h1 class="text-danger">Program not founded</h1>
+    {% endif %}
+
+{% endblock %}

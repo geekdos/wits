@@ -1,0 +1,28 @@
+<div class="page-content-header">
+    <div class="col-md-2">
+        <a href="{{ path('wits_front_homepage') }}" class="logo"></a>
+    </div>
+    <div class="col-md-7">
+        <h4 class="edition">
+            <span class="edition-number"> {{ conference.edition }}th Edition of International Conference On</span><br/>
+            <strong class="edition-name">{{ conference.name }}</strong>
+        </h4>
+        <span class="icon icon--month"></span>From {{ conference.startDate | date('d') }}
+        <span class="icon icon--day"></span>To {{ conference.endDate | date('d') }} {{ conference.endDate | date('M') }}
+        <span class="icon icon--year"></span>- {{ conference.startDate | date('Y') }},
+        <span class="fa fa-map-marker"></span> {{ conference.lieu }},
+        <span class="fa fa-globe"></span> Morocco
+    </div>
+    <div class="col-md-3">
+        <div class="socials">
+            <a href="#"><span class="fa fa-facebook-square"></span></a>
+            <a href="#"><span class="fa fa-twitter-square"></span></a>
+            <a href="#"><span class="fa fa-linkedin-square"></span></a>
+        </div>
+        <div class="contacts pull-right">
+            <a href="#"><span class="fa fa-envelope"></span> {{ conference.mail }}</a>
+            <a href="#"><span class="fa fa-phone"></span> {{ conference.phone }}</a>
+            <a href="#"><span class="fa fa-skype"></span> WITS</a>
+        </div>
+    </div>
+</div>

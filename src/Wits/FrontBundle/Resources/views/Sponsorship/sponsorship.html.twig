@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}-Sponsorship{% endblock %}
+
+{% block body %}
+<h1>Sponsorship</h1>
+<div class="gallery" id="links">
+    {% for sponsor in sponsors %}
+        <a class="gallery-item" href="{{ sponsor.webSiteUrl }}" title="{{ sponsor.nom }}" target="_blank" data-gallery>
+            <div class="image">
+                {% media sponsor.media, 'preview' with {'class': 'img-thumbnail img-responsive'} %}
+            </div>
+            <div class="meta">
+                <strong>{{ sponsor.nom }}</strong>
+                <span>{{ sponsor.webSiteUrl }}</span>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

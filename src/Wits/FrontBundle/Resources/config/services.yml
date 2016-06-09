@@ -1,0 +1,78 @@
+services:
+    wits_front.admin.conference:
+        class: Wits\FrontBundle\Admin\ConferenceAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Conference, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Conference, label: Conferences }
+
+    wits_front.admin.committee:
+        class: Wits\FrontBundle\Admin\CommitteeAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Committee, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Conference, label: Committees }
+
+    wits_front.admin.university:
+        class: Wits\FrontBundle\Admin\UniversityAdmin
+        arguments: [~, Wits\FrontBundle\Entity\University, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Organisation, label: Universitys }
+
+    wits_front.admin.school:
+        class: Wits\FrontBundle\Admin\SchoolAdmin
+        arguments: [~, Wits\FrontBundle\Entity\School, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Organisation, label: Ecoles }
+
+    wits_front.admin.participant:
+        class: Wits\FrontBundle\Admin\ParticipantAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Participant, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Organisation, label: Participants }
+
+    wits_front.admin.country:
+        class: Wits\FrontBundle\Admin\CountryAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Country, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Pays }
+
+    wits_front.admin.sponsor:
+        class: Wits\FrontBundle\Admin\SponsorAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Sponsor, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Sponsors }
+
+    wits_front.admin.city:
+        class: Wits\FrontBundle\Admin\CityAdmin
+        arguments: [~, Wits\FrontBundle\Entity\City, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Villes }
+
+    wits_front.admin.program:
+        class: Wits\FrontBundle\Admin\ProgramAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Program, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Programme}
+
+    wits_front.admin.important_dates:
+        class: Wits\FrontBundle\Admin\ImportantDatesAdmin
+        arguments: [~, Wits\FrontBundle\Entity\ImportantDates, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Dates Importants}
+
+    wits_front.admin.informations:
+        class: Wits\FrontBundle\Admin\InformationsAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Informations, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Informations}
+
+    wits_front.admin.registration:
+        class: Wits\FrontBundle\Admin\RegistrationAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Registration, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Registration}
+
+    wits_front.admin.submissions:
+        class: Wits\FrontBundle\Admin\SubmissionsAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Submissions, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Submissions}
