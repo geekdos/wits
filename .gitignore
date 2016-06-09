@@ -24,3 +24,4 @@ src/Application/Sonata/UserBundle/DependencyInjection/
 src/Application/Sonata/UserBundle/PHPCR/
 src/Application/Sonata/UserBundle/Resources/config/routing/
 src/Application/Sonata/UserBundle/Resources/views/
+/.idea/*
