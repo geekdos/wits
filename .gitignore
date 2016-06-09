@@ -10,3 +10,17 @@
 /vendor/
 /bin/
 /composer.phar
+/diagram.png
+app/cache/
+app/logs/
+src/Application/Sonata/MediaBundle/Command/
+src/Application/Sonata/MediaBundle/Controller/
+src/Application/Sonata/MediaBundle/DependencyInjection/
+src/Application/Sonata/MediaBundle/Resources/config/routing/
+src/Application/Sonata/MediaBundle/Resources/views/
+src/Application/Sonata/UserBundle/Command/
+src/Application/Sonata/UserBundle/Controller/
+src/Application/Sonata/UserBundle/DependencyInjection/
+src/Application/Sonata/UserBundle/PHPCR/
+src/Application/Sonata/UserBundle/Resources/config/routing/
+src/Application/Sonata/UserBundle/Resources/views/
