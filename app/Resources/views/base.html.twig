@@ -25,7 +25,7 @@
     <!-- PAGE CONTENT -->
     <div class="page-content">
         {% block wits_nav %}
-            {% include ':Includes:header.html.twig' %}
+            {{ render(controller('WitsFrontBundle:Conference:headerConference')) }}
             {% include ':Includes:menu.html.twig' %}
         {% endblock wits_nav %}
         {% block slider %}{% endblock slider %}
@@ -54,7 +54,7 @@
 <!-- END PAGE CONTAINER -->
 
 {% block footer %}
-    {% include ':Includes:footer.html.twig' %}
+    {{ render(controller('WitsFrontBundle:Conference:footerConference')) }}
 {% endblock %}
 
 {% block message_box %}

@@ -76,3 +76,14 @@ services:
         arguments: [~, Wits\FrontBundle\Entity\Submissions, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Submissions}
+
+#wits.twig.conference_extension:
+#     class: Wits\FrontBundle\Twig\ConferenceExtension
+#     arguments: ["@doctrine.orm.entity_manager, @service_container"]
+#     tags:
+#         - { name: twig.extension }
+
+
+
+
+

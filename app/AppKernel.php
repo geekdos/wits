@@ -20,10 +20,18 @@ class AppKernel extends Kernel
             new Wits\BackBundle\WitsBackBundle(),
             new Wits\UserBundle\WitsUserBundle(),
 
+            new Sonata\NewsBundle\SonataNewsBundle(),
+            new Sonata\IntlBundle\SonataIntlBundle(),
+            new Sonata\ClassificationBundle\SonataClassificationBundle(),
+
             // These are the other bundles the SonataAdminBundle relies on
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+
+
+            new Application\Sonata\NewsBundle\ApplicationSonataNewsBundle(),
+            new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
 
             // And finally, the storage and SonataAdminBundle
             new JMS\SerializerBundle\JMSSerializerBundle(),

@@ -12,6 +12,7 @@ imports:
     - { resource: "sonata-project/sonata_block.yml" }
     - { resource: "sonata-project/sonata_media.yml" }
     - { resource: "sonata-project/sonata_formatter.yml" }
+    - { resource: "sonata-project/sonata_news.yml" }
 
 parameters:
     locale: fr
@@ -23,6 +24,13 @@ parameters:
     # Sonata Media options
     sonata_media.cdn.host:          /uploads/media
 
+    # Sonata News Options
+    sonata_news.blog_title:         WIST Blog
+    sonata_news.blog_link:          http://wits.com
+    sonata_news.blog_description:   The Blog of the International Conference On Wireless Technologies, embedded and intelligent Systems
+    sonata_news.salt:               ThiSehasTokenIsNotSongeItcretC
+    sonata_news.comment.emails:     [oussama.khaciai@gamil.com]
+    sonata_news.comment.email_from: no-reply@example.org
 
 framework:
     #esi:             ~
