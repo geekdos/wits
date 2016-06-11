@@ -10,45 +10,50 @@ namespace Wits\FrontBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\BrowserKit\Request;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class ConferenceController extends Controller
 {
 
-    public function headerConferenceAction(){
+    private $edition;
 
-        $last = $this->getDoctrine()->getManager()->getRepository('WitsFrontBundle:Conference')->getLasteConference();
+    public function headerConferenceAction(Request $originalRequest){
 
-        dump($last);
+        $this->edition = $originalRequest->get('edition');
 
         return $this->render(':Includes:header.html.twig', array(
-            'conference' => $this->getRepo(),
+            'conference' => $this->getRepo($this->edition),
         ));
     }
 
-    public function footerConferenceAction(){
+    public function footerConferenceAction(Request $originalRequest){
+        $this->edition = $originalRequest->get('edition');
         return $this->render(':Includes:footer.html.twig', array(
-            'conference' => $this->getRepo(),
+            'conference' => $this->getRepo($this->edition),
         ));
     }
     
-    public function showAllConferenceAction(){
+    public function showAllConferenceAction(Request $originalRequest){
+        $this->edition = $originalRequest->get('edition');
         return $this->render(':Includes:allConferenes.html.twig', array(
             'allConferences' => $this->getAllConferences(),
         ));
     }
     
-    public function menuRenderAction(){
+    public function menuRenderAction(Request $originalRequest){
+
+        $this->edition = $originalRequest->get('edition');
+
         return $this->render(':Includes:menu.html.twig', array(
-            'conferenceMenu' => $this->getRepo(),
+            'conferenceMenu' => $this->getRepo($this->edition),
         ));
     }
 
-    private function getRepo(){
+    private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Conference');
-        $edition = $this->container->getParameter('edition');
-        //$edition = $this->container->setParameter('edition', 4);
+
         $conference = $repo->findOneBy(
             array('edition' => $edition)
         );

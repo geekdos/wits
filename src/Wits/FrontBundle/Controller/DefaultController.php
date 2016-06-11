@@ -10,6 +10,8 @@ class DefaultController extends Controller
     {
 
         $posts = $this->getPostManager()->findAll();
+
+        //var_dump($this->getRequest()->get('edition'));die();
         
         return $this->render('WitsFrontBundle:Default:index.html.twig', 
             [

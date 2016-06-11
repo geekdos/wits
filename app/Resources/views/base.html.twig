@@ -25,8 +25,8 @@
     <!-- PAGE CONTENT -->
     <div class="page-content">
         {% block wits_nav %}
-            {{ render(controller('WitsFrontBundle:Conference:headerConference')) }}
-            {{ render(controller('WitsFrontBundle:Conference:menuRender')) }}
+            {{ render(controller('WitsFrontBundle:Conference:headerConference', {'originalRequest': app.request})) }}
+            {{ render(controller('WitsFrontBundle:Conference:menuRender', {'originalRequest': app.request}))  }}
         {% endblock wits_nav %}
         {% block slider %}{% endblock slider %}
         {% block breadcrumb %}{% endblock breadcrumb %}
@@ -56,7 +56,7 @@
 <!-- END PAGE CONTAINER -->
 
 {% block footer %}
-    {{ render(controller('WitsFrontBundle:Conference:footerConference')) }}
+    {{ render(controller('WitsFrontBundle:Conference:footerConference', {'originalRequest': app.request}))  }}
 {% endblock %}
 
 {% block message_box %}

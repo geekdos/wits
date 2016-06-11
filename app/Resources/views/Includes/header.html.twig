@@ -1,7 +1,7 @@
 {% if conference != null %}
 <div class="page-content-header">
     <div class="col-md-2">
-        <a href="{{ path('wits_front_homepage') }}" class="logo"></a>
+        <a href="{{ path('wits_front_homepage', {'edition': conference.edition}) }}" class="logo"></a>
     </div>
     <div class="col-md-7">
         <h4 class="edition">

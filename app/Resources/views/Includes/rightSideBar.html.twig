@@ -22,9 +22,9 @@
     </div>
     <!-- END WIDGET CLOCK -->
 
-    {{ render(controller('WitsFrontBundle:ImportantDates:showImportantDates')) }}
+    {{ render(controller('WitsFrontBundle:ImportantDates:showImportantDates', {'originalRequest': app.request}))  }}
 
     <!-- PREVIOUS-->
-    {{ render(controller('WitsFrontBundle:Conference:showAllConference')) }}
+    {{ render(controller('WitsFrontBundle:Conference:showAllConference', {'originalRequest': app.request}))  }}
     <!-- END PREVIOUS WITS-->
 </div>
