@@ -17,7 +17,14 @@ class DefaultController extends Controller
             ]    
         );
     }
-
+    
+    /**
+     * @return \Sonata\NewsBundle\Model\PostManagerInterface
+     */
+    protected function getPostManager()
+    {
+        return $this->get('sonata.news.manager.post');
+    }
 
     /**
      * @param array $criteria
@@ -48,13 +55,5 @@ class DefaultController extends Controller
         }
 
         return $response;
-    }
-    
-    /**
-     * @return \Sonata\NewsBundle\Model\PostManagerInterface
-     */
-    protected function getPostManager()
-    {
-        return $this->get('sonata.news.manager.post');
     }
 }

@@ -15,4 +15,16 @@ class ConferenceRepository extends EntityRepository
     public function getAllConferences(){
         return $this->findAll();
     }
+
+    public function getLasteConference(){
+
+        $last_entity = $this->createQueryBuilder('e')
+            ->select('e')
+            ->orderBy('e.id', 'DESC')
+            ->setMaxResults(1)
+            ->getQuery()
+            ->getOneOrNullResult();
+
+        return $last_entity;
+    }
 }

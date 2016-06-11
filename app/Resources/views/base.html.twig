@@ -26,7 +26,7 @@
     <div class="page-content">
         {% block wits_nav %}
             {{ render(controller('WitsFrontBundle:Conference:headerConference')) }}
-            {% include ':Includes:menu.html.twig' %}
+            {{ render(controller('WitsFrontBundle:Conference:menuRender')) }}
         {% endblock wits_nav %}
         {% block slider %}{% endblock slider %}
         {% block breadcrumb %}{% endblock breadcrumb %}

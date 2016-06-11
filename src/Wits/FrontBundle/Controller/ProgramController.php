@@ -22,11 +22,6 @@ class ProgramController extends Controller
 
         if (!$committee) {
             $committee = null;
-            /*
-            throw $this->createNotFoundException(
-                'No committee found for '.$committeeName
-            );
-            */
         }
 
         return $committee;

@@ -24,15 +24,7 @@
 
     {{ render(controller('WitsFrontBundle:ImportantDates:showImportantDates')) }}
 
-    {{ render(controller('WitsFrontBundle:Conference:allConference')) }}
-    <!-- START GOOGLE MAP WITH MARKER -->
-    <div class="panel panel-warning">
-        <div class="panel-heading">
-            <h3 class="panel-title">Google Map With Markers</h3>
-        </div>
-        <div class="panel-body panel-body-map">
-            <div id="google_ptm_map" style="width: 100%; height: 300px;"></div>
-        </div>
-    </div>
-    <!-- END GOOGLE MAP WITH MARKER -->
+    <!-- PREVIOUS-->
+    {{ render(controller('WitsFrontBundle:Conference:showAllConference')) }}
+    <!-- END PREVIOUS WITS-->
 </div>

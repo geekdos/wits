@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class SponsorshipController extends Controller
 {
-    public function sponsorshipAction($edition)
+    public function sponsorshipAction()
     {
         return $this->render('WitsFrontBundle:Sponsorship:sponsorship.html.twig', array(
             'sponsors' => $this->getRepo()

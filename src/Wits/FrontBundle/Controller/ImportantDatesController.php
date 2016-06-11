@@ -8,8 +8,6 @@ class ImportantDatesController extends Controller
 {
     public function showImportantDatesAction()
     {
-        dump($this->getRepo());
-
         return $this->render('WitsFrontBundle:ImportantDates:show_important_dates.html.twig', array(
             'importantDates' => $this->getRepo(),
         ));
