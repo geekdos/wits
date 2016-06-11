@@ -45,8 +45,16 @@ class ImportantDatesAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name')
-            ->add('date', 'datetime')
+            ->with('La date importante', array('class' => 'col-md-6'))
+                ->add('name')
+                ->add('date', 'datetime')
+            ->end()
+            ->with('La conference', array('class' => 'col-md-6'))
+                ->add('conference', 'sonata_type_model', array(
+                    'class' => 'Wits\FrontBundle\Entity\Conference',
+                    'property' => 'edition',
+                ))
+            ->end()
         ;
     }
 

@@ -12,4 +12,7 @@ use Doctrine\ORM\EntityRepository;
  */
 class ConferenceRepository extends EntityRepository
 {
+    public function getAllConferences(){
+        return $this->findAll();
+    }
 }

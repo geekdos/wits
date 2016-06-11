@@ -16,19 +16,30 @@ class ConferenceController extends Controller
 
     public function headerConferenceAction(){
         return $this->render(':Includes:header.html.twig', array(
-            'conference' => $this->getRepo()
+            'conference' => $this->getRepo(),
         ));
     }
 
     public function footerConferenceAction(){
         return $this->render(':Includes:footer.html.twig', array(
-            'conference' => $this->getRepo()
+            'conference' => $this->getRepo(),
+        ));
+    }
+
+
+    public function allConferenceAction(){
+
+        dump($this->allConferences());
+
+        return $this->render(':Includes:allConferenes.html.twig', array(
+            'conference' => $this->allConferences(),
         ));
     }
 
     private function getRepo(){
-        $em = $this->getDoctrine()->getManager();
-        $repo = $em->getRepository('WitsFrontBundle:Conference');
+
+        $repo = $this->getManager();
+
         $edition = $this->container->getParameter("edition");
         $conference = $repo->findOneBy(
             array('edition' => $edition)
@@ -39,6 +50,16 @@ class ConferenceController extends Controller
         }
 
         return $conference;
+    }
+
+    private function allConferences(){
+        return $this->getManager()->getAllConferences();
+    }
+
+    private function getManager(){
+        $em = $this->getManager();
+
+        return $em->getRepository('WitsFrontBundle:Conference');
     }
 
 }

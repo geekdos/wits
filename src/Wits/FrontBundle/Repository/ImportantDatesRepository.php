@@ -12,4 +12,14 @@ use Doctrine\ORM\EntityRepository;
  */
 class ImportantDatesRepository extends EntityRepository
 {
+
+    public function getImportanteDateByConferenceEdition($edition){
+        return $this->createQueryBuilder('d')
+            ->join('d.conference', 'c')
+            ->where('c.edition = :edition ')
+            ->setParameter('edition', $edition)
+            ->getQuery()
+            ->getResult();
+    }
+
 }

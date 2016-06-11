@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {# META SECTION #}
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    {# END META SECTION #}
+
+    <title>WITS-{{ "now"|date("Y") }}{% block title %}{% endblock %}Admin</title>
+
+    {% block stylesheets %}{% endblock %}
+    {# CSS INCLUDE #}
+    <link rel="stylesheet" type="text/css" id="theme" href="{{ asset("bundles/wits/css/theme-default.css") }}"/>
+    <link rel="stylesheet" type="text/css" id="theme1" href="{{ asset("bundles/wits/css/geekdos/css/app.css") }}"/>
+    {#  EOF CSS INCLUDE #}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+
+<!-- START PAGE CONTAINER -->
+<div class="page-container page-navigation-top page-navigation-top-custom">
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+       {% block content %}{% endblock content %}
+    </div>
+</div>

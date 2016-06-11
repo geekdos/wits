@@ -12,6 +12,7 @@ imports:
     - { resource: "sonata-project/sonata_block.yml" }
     - { resource: "sonata-project/sonata_media.yml" }
     - { resource: "sonata-project/sonata_formatter.yml" }
+    - { resource: "sonata-project/sonata_classification.yml" }
     - { resource: "sonata-project/sonata_news.yml" }
 
 parameters:

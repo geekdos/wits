@@ -22,49 +22,9 @@
     </div>
     <!-- END WIDGET CLOCK -->
 
-    <!-- CONTACTS IMPORTANT DATE -->
-    <div class="panel panel-warning">
-        <div class="panel-heading">
-            <h3 class="panel-title">IMPORTANT DATES</h3>
-        </div>
-        <div class="panel-body list-group list-group-contacts">
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">OPENING</span>
-                <p>26 APRIL 14:20</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">ACTIVITY</span>
-                <p>27 APRIL 10:00 TO 18:00</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">CLOSING</span>
-                <p>28 APRIL 18:00</p>
-            </a>
-        </div>
-    </div>
-    <!-- END IMPORTANT DATE -->
+    {{ render(controller('WitsFrontBundle:ImportantDates:showImportantDates')) }}
 
-    <!-- PREVIOUS-->
-    <div class="panel panel-warning">
-        <div class="panel-heading">
-            <h3 class="panel-title">PREVIOUS WITS</h3>
-        </div>
-        <div class="panel-body list-group list-group-contacts">
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">WITS TITLE</span>
-                <p>2017</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">WITS TITLE</span>
-                <p>2016</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <span class="contacts-title">WITS TITLE</span>
-                <p>2015</p>
-            </a>
-        </div>
-    </div>
-    <!-- END PREVIOUS WITS-->
+    {{ render(controller('WitsFrontBundle:Conference:allConference')) }}
     <!-- START GOOGLE MAP WITH MARKER -->
     <div class="panel panel-warning">
         <div class="panel-heading">
