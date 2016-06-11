@@ -15,9 +15,8 @@ imports:
 
 parameters:
     locale: fr
-    edition: 3
     # Sonata Admin Options
-    sonata_admin.title:             WITS
+    sonata_admin.title: WITS
     sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
 
     # Sonata Media options
@@ -53,7 +52,7 @@ twig:
     strict_variables: "%kernel.debug%"
     globals:
         committeesName: name
-        witsEdition: "%edition%"
+
 
 # Doctrine Configuration
 doctrine:

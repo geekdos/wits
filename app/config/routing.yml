@@ -1,6 +1,6 @@
 wits_front:
     resource: "@WitsFrontBundle/Resources/config/routing.yml"
-    prefix:   /%edition%
+    prefix:   /
 
 wits_back:
     resource: "@WitsBackBundle/Resources/config/routing.yml"
