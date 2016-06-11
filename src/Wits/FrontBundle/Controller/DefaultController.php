@@ -9,6 +9,10 @@ class DefaultController extends Controller
     public function indexAction()
     {
 
+        $request = $this->getRequest();
+
+        dump($request);
+
         $posts = $this->getPostManager()->findAll();
         
         return $this->render('WitsFrontBundle:Default:index.html.twig', 
