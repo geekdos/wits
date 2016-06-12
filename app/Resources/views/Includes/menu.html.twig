@@ -9,6 +9,11 @@
                     class="xn-text">Home</span></a>
     </li>
     <li class="xn-openable">
+        <a href="{{ path('wits_front_call_for_submissions', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-phone"></span>
+            <span class="xn-text">Call For Paper</span>
+        </a>
+    </li>
+    <li class="xn-openable">
         <a href="#">
             <span class="fa fa-users"></span>
             <span class="xn-text">Committees</span>
@@ -62,19 +67,27 @@
         </ul>
     </li>
     <li class="xn-openable">
-        <a href="{{ path('wits_front_call_for_submissions', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-phone"></span> <span
-                    class="xn-text">Call For Submissions</span></a>
+        <a href="{{ path('wits_front_information', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-map-marker"></span>
+            <span class="xn-text">Venue</span></a>
     </li>
     <li class="xn-openable">
-        <a href="{{ path('wits_front_program', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-list-alt"></span> <span class="xn-text">Program</span></a>
+        <a href="{{ path('wits_front_information', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-bullhorn"></span>
+            <span class="xn-text">Speakers</span></a>
     </li>
     <li class="xn-openable">
-        <a href="{{ path('wits_front_registration', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-pencil"></span> <span
-                    class="xn-text">Registration</span></a>
+        <a href="{{ path('wits_front_program', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-list-alt"></span>
+            <span class="xn-text">Program</span>
+        </a>
     </li>
     <li class="xn-openable">
-        <a href="{{ path('wits_front_information', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-map-marker"></span> <span
-                    class="xn-text">Venue</span></a>
+        <a href="{{ path('wits_front_program', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-book"></span>
+            <span class="xn-text">Publication</span>
+        </a>
+    </li>
+    <li class="xn-openable">
+        <a href="{{ path('wits_front_registration', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-pencil"></span>
+            <span class="xn-text">Registration</span>
+        </a>
     </li>
     <li class="xn-openable">
         <a href="{{ path('wits_front_sponsorship', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-building"></span> <span
@@ -84,13 +97,6 @@
         <a href="{{ path('wits_front_contact', {'edition': conferenceMenu.edition}) }}"><span class="fa fa-envelope"></span> <span
                     class="xn-text">Contact-us</span></a>
     </li>
-    <!-- SEARCH -->
-    <li class="xn-search pull-right">
-        <form role="form">
-            <input type="text" name="search" placeholder="Search..."/>
-        </form>
-    </li>
-    <!-- END SEARCH -->
 </ul>
 <!-- END X-NAVIGATION VERTICAL -->
 {% endif %}

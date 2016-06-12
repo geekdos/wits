@@ -39,6 +39,13 @@ class Participant
     /**
      * @var string
      *
+     * @ORM\Column(name="function", type="string", length=255)
+     */
+    private $function;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="isAIeeeMember", type="boolean")
      */
     private $isAIeeeMember;
@@ -342,5 +349,28 @@ class Participant
     public function getConferenceResponsible()
     {
         return $this->conferenceResponsible;
+    }
+
+    /**
+     * Set function
+     *
+     * @param string $function
+     * @return Participant
+     */
+    public function setFunction($function)
+    {
+        $this->function = $function;
+
+        return $this;
+    }
+
+    /**
+     * Get function
+     *
+     * @return string 
+     */
+    public function getFunction()
+    {
+        return $this->function;
     }
 }

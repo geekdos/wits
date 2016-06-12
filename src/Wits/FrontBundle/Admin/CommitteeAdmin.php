@@ -43,8 +43,12 @@ class CommitteeAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->with('Le Nom du committee', array('class' => 'col-md-6'))
-            ->add('name', 'text')
+            ->with('les informations de la committee', array('class' => 'col-md-6'))
+                ->add('name', 'text')
+                ->add('conference', 'sonata_type_model', array(
+                    'class' => 'Wits\FrontBundle\Entity\Conference',
+                    'property' => 'edition',
+                ))
             ->end()
             ->with('La list des members', array('class' => 'col-md-6'))
                 ->add('members', 'sonata_type_model', array(

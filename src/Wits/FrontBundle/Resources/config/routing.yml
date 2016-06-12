@@ -74,7 +74,3 @@ wits_front_contact:
 wits_front_sponsorship:
     path:     /sponsorship/
     defaults: { _controller: WitsFrontBundle:Sponsorship:sponsorship }
-
-show_important_dates:
-    path:     /showImportantDates
-    defaults: { _controller: WitsFrontBundle:ImportantDates:showImportantDates }

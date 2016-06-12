@@ -28,8 +28,8 @@ class InformationsAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+            ->addIdentifier('id')
             ->addIdentifier('name')
-            ->add('content')
             ->add('online')
             ->add('_action', 'actions', array(
                 'actions' => array(

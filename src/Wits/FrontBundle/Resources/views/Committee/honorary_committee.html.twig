@@ -1,7 +1,7 @@
 {% extends "::base.html.twig" %}
 {% block title %}
     {% if committee != false %}
-        - {{ committee.name }}
+        - {{ committee[0].name }}
     {% else %}
         - Committee
     {% endif %}

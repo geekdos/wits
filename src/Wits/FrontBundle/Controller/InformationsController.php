@@ -8,8 +8,9 @@ class InformationsController extends Controller
 {
     public function informationsAction()
     {
+        $edition = $this->getRequest()->get('edition');
         return $this->render('WitsFrontBundle:Informations:informations.html.twig', array(
-            'informations' => $this->getRepo()
+            'informations' => $this->getRepo($edition),
         ));
     }
 
@@ -34,12 +35,10 @@ class InformationsController extends Controller
         ));
     }
 
-    private function getRepo(){
+    private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Informations');
-        $informations = $repo->findBy(
-            array('online' => true)
-        );
+        $informations = $repo->getVenusByConferenceEdition($edition);
 
         if (!$informations) {
             $informations = null;

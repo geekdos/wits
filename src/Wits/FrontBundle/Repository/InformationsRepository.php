@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class InformationsRepository extends EntityRepository
 {
+    public function getVenusByConferenceEdition($edition){
+        return $this->createQueryBuilder('i')
+            ->join('i.conference', 'c')
+            ->where('c.edition = :edition AND i.online = :status ')
+            ->setParameter('edition', $edition)
+            ->setParameter('status', true)
+            ->getQuery()
+            ->getResult();
+    }
 }

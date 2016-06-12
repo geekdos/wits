@@ -63,7 +63,7 @@ services:
         class: Wits\FrontBundle\Admin\InformationsAdmin
         arguments: [~, Wits\FrontBundle\Entity\Informations, SonataAdminBundle:CRUD]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Informations}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Venue}
 
     wits_front.admin.registration:
         class: Wits\FrontBundle\Admin\RegistrationAdmin

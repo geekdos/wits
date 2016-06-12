@@ -32,6 +32,7 @@ class ParticipantAdmin extends Admin
         $listMapper
             ->addIdentifier('firstName')
             ->add('lastName')
+            ->add('function')
             ->add('isAIeeeMember')
             ->add('email')
             ->add('phone')
@@ -51,18 +52,19 @@ class ParticipantAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->with('Information personelle', array('class' => 'col-md-6'))
+            ->with('Informations générales', array('class' => 'col-md-6'))
                 ->add('firstName')
                 ->add('lastName')
+                ->add('function')
                 ->add('isAIeeeMember', null, array('required' => false))
                 ->add('email', null, array('required' => false))
+            ->end()
+            ->with('Informations personnelles', array('class' => 'col-md-6'))
                 ->add('phone', null, array('required' => false))
                 ->add('school', 'sonata_type_model', array(
                     'class' => 'Wits\FrontBundle\Entity\School',
                     'property' => 'name',
                 ))
-            ->end()
-            ->with('Photo de la prof', array('class' => 'col-md-6'))
                 ->add('media', 'sonata_media_type', array(
                     'required' => false,
                     'provider' => 'sonata.media.provider.image',
@@ -80,6 +82,7 @@ class ParticipantAdmin extends Admin
         $showMapper
             ->add('firstName')
             ->add('lastName')
+            ->add('function')
             ->add('isAIeeeMember')
             ->add('email')
             ->add('phone')

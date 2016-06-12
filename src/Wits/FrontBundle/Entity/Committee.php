@@ -35,6 +35,11 @@ class Committee
     private $members;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Conference", inversedBy="committee")
+     */
+    private $conference;
+
+    /**
      * Committee constructor.
      */
     public function __construct()
@@ -111,5 +116,28 @@ class Committee
     public function getMembers()
     {
         return $this->members;
+    }
+
+    /**
+     * Set conference
+     *
+     * @param \Wits\FrontBundle\Entity\Conference $conference
+     * @return Committee
+     */
+    public function setConference(\Wits\FrontBundle\Entity\Conference $conference = null)
+    {
+        $this->conference = $conference;
+
+        return $this;
+    }
+
+    /**
+     * Get conference
+     *
+     * @return \Wits\FrontBundle\Entity\Conference 
+     */
+    public function getConference()
+    {
+        return $this->conference;
     }
 }

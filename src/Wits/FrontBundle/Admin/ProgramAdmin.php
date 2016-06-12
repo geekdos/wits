@@ -46,6 +46,10 @@ class ProgramAdmin extends Admin
     {
         $formMapper
             ->add('name')
+            ->add('conference', 'sonata_type_model', array(
+                'class' => 'Wits\FrontBundle\Entity\Conference',
+                'property' => 'edition',
+            ))
             ->add('content', 'ckeditor', array(
                 'required' => false,
                 'attr' => array('cols' => '8', 'rows' => '8')
