@@ -88,3 +88,15 @@ services:
         arguments: [~, Wits\FrontBundle\Entity\Slider, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Slider}
+
+    wits_front.admin.publication:
+        class: Wits\FrontBundle\Admin\PublicationAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Publication, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Publication}
+
+    wits_front.admin.speakers:
+        class: Wits\FrontBundle\Admin\SpeakersAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Speakers, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Speakers}

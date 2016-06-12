@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f7eae4a2-d75c-42a7-9042-a608519d6b23" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/sonata-project/sonata_admin.yml" afterPath="$PROJECT_DIR$/app/config/sonata-project/sonata_admin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ProgramController.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ProgramController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/RegistrationController.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/RegistrationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SponsorshipController.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SponsorshipController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SubmissionsController.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SubmissionsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/ProgramRepository.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/ProgramRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/RegistrationRepository.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/RegistrationRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SponsorRepository.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SponsorRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SubmissionsRepository.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SubmissionsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Contact/contact.html.twig" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Contact/contact.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Program/program.html.twig" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Program/program.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Sponsorship/sponsorship.html.twig" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Sponsorship/sponsorship.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/services.yml" />
     </list>
     <ignored path="wits.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +26,82 @@
     <favorites_list name="wits" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Publications/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speakers.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Speakers/speakers.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicationsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/PublicationsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+              <folding>
+                <element signature="e#534#563#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicationRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/PublicationRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgramController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ProgramController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpeakersRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SpeakersRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgramRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/ProgramRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,15 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/views/Includes/rightSideBar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/SonataNewsBundle/views/Post/comments.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SonataNewsBundle/views/Post/view.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SonataNewsBundle/views/Post/comment_form.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/sonata-project/sonata_media.yml" />
-        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Admin/SliderAdmin.php" />
-        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Program.php" />
-        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Slider.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SliderRepository.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SliderController.php" />
@@ -66,7 +123,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/Includes/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/CommitteeRepository.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/CommitteeController.php" />
-        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Committee.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Admin/CommitteeAdmin.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Committee/general_chairs.html.twig" />
@@ -94,6 +150,16 @@
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SponsorshipController.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/RegistrationRepository.php" />
         <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Program/program.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Publication.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Speakers.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Admin/SpeakersAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Admin/PublicationAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Publications/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Speakers/speakers.html.twig" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SpeakersRepository.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Repository/PublicationRepository.php" />
+        <option value="$PROJECT_DIR$/src/Wits/FrontBundle/Controller/PublicationsController.php" />
       </list>
     </option>
   </component>
@@ -108,10 +174,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -241,8 +305,38 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Submissions" />
+              <option name="myItemId" value="wits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wits" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wits" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Speakers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +370,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sponsorship" />
+              <option name="myItemId" value="Publications" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,12 +399,30 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="wits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wits" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Registration" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wits" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,139 +448,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Program" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImportantDates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wits" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -543,18 +523,18 @@
       <workItem from="1465654200152" duration="7166000" />
       <workItem from="1465687604718" duration="7832000" />
       <workItem from="1465723376161" duration="9003000" />
-      <workItem from="1465763782774" duration="5599000" />
+      <workItem from="1465763782774" duration="7464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63773000" />
+    <option name="totallyTimeSpent" value="65638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22254759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22254759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -589,86 +569,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/sonata-project/sonata_block.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="65" column="80" selection-start-line="65" selection-start-column="80" selection-end-line="65" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Includes/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="73" column="119" selection-start-line="73" selection-start-column="119" selection-end-line="73" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/InformationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/CommitteeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="91" column="91" selection-start-line="91" selection-start-column="91" selection-end-line="91" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ConferenceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="49" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Informations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3121">
-          <caret line="206" column="5" selection-start-line="206" selection-start-column="5" selection-end-line="206" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Committee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Committee/general_chairs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -779,14 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Admin/ProgramAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -879,24 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ProgramController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#525#550#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/ProgramRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/SubmissionsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -982,6 +856,235 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Conference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="251" column="27" selection-start-line="251" selection-start-column="27" selection-end-line="251" selection-end-column="27" />
+          <folding>
+            <marker date="1465774001340" expanded="true" signature="283:16561" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="293:427" ph=" @var int ..." />
+            <marker date="1465774001340" expanded="true" signature="455:546" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="576:668" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="699:783" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="824:909" ph=" @var \DateTime ..." />
+            <marker date="1465774001340" expanded="true" signature="944:1027" ph=" @var \DateTime ..." />
+            <marker date="1465774001340" expanded="true" signature="1060:1151" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1181:1272" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1302:1397" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1431:1525" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1558:1653" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1688:1782" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1815:1907" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="1938:2032" ph=" @var string ..." />
+            <marker date="1465774001340" expanded="true" signature="2065:2157" ph=" @ORM\ManyToOne(targetEntity=&quot;Participant&quot;, inversedBy=&quot;conferenceResponsible&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2199:2274" ph=" @ORM\OneToMany(targetEntity=&quot;Sponsor&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2308:2388" ph=" @ORM\OneToMany(targetEntity=&quot;Informations&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2426:2505" ph=" @ORM\OneToMany(targetEntity=&quot;Submissions&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2542:2622" ph=" @ORM\OneToMany(targetEntity=&quot;Registration&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2661:2743" ph=" @ORM\OneToMany(targetEntity=&quot;ImportantDates&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2779:2854" ph=" @ORM\OneToMany(targetEntity=&quot;Program&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2888:2964" ph=" @ORM\OneToMany(targetEntity=&quot;Speakers&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="2999:3078" ph=" @ORM\OneToMany(targetEntity=&quot;Publication&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="3116:3190" ph=" @ORM\OneToMany(targetEntity=&quot;Slider&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="3223:3300" ph=" @ORM\OneToMany(targetEntity=&quot;Committee&quot;, mappedBy=&quot;conference&quot;) ..." />
+            <marker date="1465774001340" expanded="true" signature="3339:3376" ph=" Conference constructor. ..." />
+            <marker date="1465774001340" expanded="true" signature="3412:3933" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="3941:3992" ph=" Get id ..." />
+            <marker date="1465774001340" expanded="true" signature="4022:4060" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4069:4151" ph=" Set name ..." />
+            <marker date="1465774001340" expanded="true" signature="4188:4252" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4261:4313" ph=" Get name ..." />
+            <marker date="1465774001340" expanded="true" signature="4345:4385" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4394:4478" ph=" Set title ..." />
+            <marker date="1465774001340" expanded="true" signature="4517:4583" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4592:4645" ph=" Get title ..." />
+            <marker date="1465774001340" expanded="true" signature="4678:4719" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4728:4823" ph=" Set startDate ..." />
+            <marker date="1465774001340" expanded="true" signature="4870:4944" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="4953:5013" ph=" Get startDate ..." />
+            <marker date="1465774001340" expanded="true" signature="5050:5095" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5104:5195" ph=" Set endDate ..." />
+            <marker date="1465774001340" expanded="true" signature="5238:5308" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5317:5375" ph=" Get endDate ..." />
+            <marker date="1465774001340" expanded="true" signature="5410:5453" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5462:5544" ph=" Set lieu ..." />
+            <marker date="1465774001340" expanded="true" signature="5581:5645" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5654:5706" ph=" Get lieu ..." />
+            <marker date="1465774001340" expanded="true" signature="5738:5778" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5787:5869" ph=" Set mail ..." />
+            <marker date="1465774001340" expanded="true" signature="5906:5970" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="5979:6031" ph=" Get mail ..." />
+            <marker date="1465774001340" expanded="true" signature="6063:6103" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="6112:6200" ph=" Set address ..." />
+            <marker date="1465774001340" expanded="true" signature="6243:6313" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="6322:6377" ph=" Get address ..." />
+            <marker date="1465774001340" expanded="true" signature="6412:6455" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="6464:6548" ph=" Set phone ..." />
+            <marker date="1465774001340" expanded="true" signature="6587:6653" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="6662:6715" ph=" Get phone ..." />
+            <marker date="1465774001340" expanded="true" signature="6748:6789" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="6798:6886" ph=" Set edition ..." />
+            <marker date="1465774001340" expanded="true" signature="6929:6999" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="7008:7063" ph=" Get edition ..." />
+            <marker date="1465774001340" expanded="true" signature="7098:7141" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="7150:7266" ph=" Add sponsors ..." />
+            <marker date="1465774001340" expanded="true" signature="7343:7417" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="7426:7519" ph=" Remove sponsors ..." />
+            <marker date="1465774001340" expanded="true" signature="7599:7662" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="7671:7760" ph=" Get sponsors ..." />
+            <marker date="1465774001340" expanded="true" signature="7796:7840" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="8695:8821" ph=" Add submissions ..." />
+            <marker date="1465774001340" expanded="true" signature="8908:8988" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="8997:9100" ph=" Remove submissions ..." />
+            <marker date="1465774001340" expanded="true" signature="9190:9259" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="9268:9360" ph=" Get submissions ..." />
+            <marker date="1465774001340" expanded="true" signature="9399:9446" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="9455:9586" ph=" Add registrations ..." />
+            <marker date="1465774001340" expanded="true" signature="9678:9762" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="9771:9879" ph=" Remove registrations ..." />
+            <marker date="1465774001340" expanded="true" signature="9974:10047" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="10056:10150" ph=" Get registrations ..." />
+            <marker date="1465774001340" expanded="true" signature="10191:10240" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="10829:10920" ph=" Get dateimport ..." />
+            <marker date="1465774001340" expanded="true" signature="10958:11004" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="11013:11129" ph=" Add programs ..." />
+            <marker date="1465774001340" expanded="true" signature="11206:11280" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="11289:11382" ph=" Remove programs ..." />
+            <marker date="1465774001340" expanded="true" signature="11462:11525" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="11534:11623" ph=" Get programs ..." />
+            <marker date="1465774001340" expanded="true" signature="11659:11703" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="11712:11808" ph=" Set description ..." />
+            <marker date="1465774001340" expanded="true" signature="11859:11937" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="11946:12005" ph=" Get description ..." />
+            <marker date="1465774001340" expanded="true" signature="12044:12091" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="12100:12190" ph=" Set facebook ..." />
+            <marker date="1465774001340" expanded="true" signature="12235:12307" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="12316:12372" ph=" Get facebook ..." />
+            <marker date="1465774001340" expanded="true" signature="12408:12452" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="12461:12549" ph=" Set twitter ..." />
+            <marker date="1465774001340" expanded="true" signature="12592:12662" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="12671:12726" ph=" Get twitter ..." />
+            <marker date="1465774001340" expanded="true" signature="12761:12804" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="12813:12903" ph=" Set linkedin ..." />
+            <marker date="1465774001340" expanded="true" signature="12948:13020" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="13029:13085" ph=" Get linkedin ..." />
+            <marker date="1465774001340" expanded="true" signature="13121:13165" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="13174:13300" ph=" Set responsible ..." />
+            <marker date="1465774001340" expanded="true" signature="13395:13473" ph="{...}" />
+            <marker date="1465774001340" expanded="true" signature="13482:13571" ph=" Get responsible ..." />
+            <marker date="1465774001340" expanded="true" signature="13610:13657" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Program.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1224">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Publication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Entity/Speakers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Admin/ProgramAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Admin/PublicationAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Admin/SpeakersAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Publications/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Resources/views/Speakers/speakers.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/ProgramRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/SpeakersRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Repository/PublicationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/ProgramController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Wits/FrontBundle/Controller/PublicationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <element signature="e#534#563#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

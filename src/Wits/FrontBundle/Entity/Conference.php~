@@ -150,6 +150,16 @@ class Conference
     private $programs;
 
     /**
+     * @ORM\OneToMany(targetEntity="Speakers", mappedBy="conference")
+     */
+    private $speaksers;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Publication", mappedBy="conference")
+     */
+    private $publications;
+
+    /**
      * @ORM\OneToMany(targetEntity="Slider", mappedBy="conference")
      */
     private $sliders;
@@ -172,6 +182,8 @@ class Conference
         $this->programs = new ArrayCollection();
         $this->sliders = new ArrayCollection();
         $this->committee = new ArrayCollection();
+        $this->speaksers = new ArrayCollection();
+        $this->publications = new ArrayCollection();
     }
     /**
      * Get id

@@ -74,3 +74,11 @@ wits_front_contact:
 wits_front_sponsorship:
     path:     /sponsorship/
     defaults: { _controller: WitsFrontBundle:Sponsorship:sponsorship }
+
+show:
+    path:     /publications
+    defaults: { _controller: WitsFrontBundle:Publications:show }
+
+speakers:
+    path:     /speakers
+    defaults: { _controller: WitsFrontBundle:Speakers:speakers }

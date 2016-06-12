@@ -350,4 +350,27 @@ class Participant
     {
         return $this->conferenceResponsible;
     }
+
+    /**
+     * Set function
+     *
+     * @param string $function
+     * @return Participant
+     */
+    public function setFunction($function)
+    {
+        $this->function = $function;
+
+        return $this;
+    }
+
+    /**
+     * Get function
+     *
+     * @return string 
+     */
+    public function getFunction()
+    {
+        return $this->function;
+    }
 }

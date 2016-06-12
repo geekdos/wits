@@ -150,6 +150,16 @@ class Conference
     private $programs;
 
     /**
+     * @ORM\OneToMany(targetEntity="Speakers", mappedBy="conference")
+     */
+    private $speaksers;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Publication", mappedBy="conference")
+     */
+    private $publications;
+
+    /**
      * @ORM\OneToMany(targetEntity="Slider", mappedBy="conference")
      */
     private $sliders;
@@ -172,6 +182,8 @@ class Conference
         $this->programs = new ArrayCollection();
         $this->sliders = new ArrayCollection();
         $this->committee = new ArrayCollection();
+        $this->speaksers = new ArrayCollection();
+        $this->publications = new ArrayCollection();
     }
     /**
      * Get id
@@ -774,5 +786,71 @@ class Conference
     public function getCommittee()
     {
         return $this->committee;
+    }
+
+    /**
+     * Add speaksers
+     *
+     * @param \Wits\FrontBundle\Entity\Speakers $speaksers
+     * @return Conference
+     */
+    public function addSpeakser(\Wits\FrontBundle\Entity\Speakers $speaksers)
+    {
+        $this->speaksers[] = $speaksers;
+
+        return $this;
+    }
+
+    /**
+     * Remove speaksers
+     *
+     * @param \Wits\FrontBundle\Entity\Speakers $speaksers
+     */
+    public function removeSpeakser(\Wits\FrontBundle\Entity\Speakers $speaksers)
+    {
+        $this->speaksers->removeElement($speaksers);
+    }
+
+    /**
+     * Get speaksers
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getSpeaksers()
+    {
+        return $this->speaksers;
+    }
+
+    /**
+     * Add publications
+     *
+     * @param \Wits\FrontBundle\Entity\Publication $publications
+     * @return Conference
+     */
+    public function addPublication(\Wits\FrontBundle\Entity\Publication $publications)
+    {
+        $this->publications[] = $publications;
+
+        return $this;
+    }
+
+    /**
+     * Remove publications
+     *
+     * @param \Wits\FrontBundle\Entity\Publication $publications
+     */
+    public function removePublication(\Wits\FrontBundle\Entity\Publication $publications)
+    {
+        $this->publications->removeElement($publications);
+    }
+
+    /**
+     * Get publications
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPublications()
+    {
+        return $this->publications;
     }
 }
