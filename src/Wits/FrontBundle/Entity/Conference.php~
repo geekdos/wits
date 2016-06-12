@@ -148,6 +148,11 @@ class Conference
      * @ORM\OneToMany(targetEntity="Program", mappedBy="conference")
      */
     private $programs;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Slider", mappedBy="conference")
+     */
+    private $sliders;
     
     /**
      * Conference constructor.
@@ -160,6 +165,7 @@ class Conference
         $this->registrations = new ArrayCollection();
         $this->dateimport = new ArrayCollection();
         $this->programs = new ArrayCollection();
+        $this->sliders = new ArrayCollection();
     }
     /**
      * Get id
@@ -696,4 +702,5 @@ class Conference
     {
         return $this->responsible;
     }
+    
 }

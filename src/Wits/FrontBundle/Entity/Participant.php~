@@ -310,4 +310,37 @@ class Participant
         return $this->isAIeeeMember;
     }
     
+
+    /**
+     * Add conferenceResponsible
+     *
+     * @param \Wits\FrontBundle\Entity\Conference $conferenceResponsible
+     * @return Participant
+     */
+    public function addConferenceResponsible(\Wits\FrontBundle\Entity\Conference $conferenceResponsible)
+    {
+        $this->conferenceResponsible[] = $conferenceResponsible;
+
+        return $this;
+    }
+
+    /**
+     * Remove conferenceResponsible
+     *
+     * @param \Wits\FrontBundle\Entity\Conference $conferenceResponsible
+     */
+    public function removeConferenceResponsible(\Wits\FrontBundle\Entity\Conference $conferenceResponsible)
+    {
+        $this->conferenceResponsible->removeElement($conferenceResponsible);
+    }
+
+    /**
+     * Get conferenceResponsible
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getConferenceResponsible()
+    {
+        return $this->conferenceResponsible;
+    }
 }

@@ -83,7 +83,8 @@ services:
 #     tags:
 #         - { name: twig.extension }
 
-
-
-
-
+    wits_front.admin.slider:
+        class: Wits\FrontBundle\Admin\SliderAdmin
+        arguments: [~, Wits\FrontBundle\Entity\Slider, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Slider}

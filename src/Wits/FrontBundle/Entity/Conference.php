@@ -148,6 +148,11 @@ class Conference
      * @ORM\OneToMany(targetEntity="Program", mappedBy="conference")
      */
     private $programs;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Slider", mappedBy="conference")
+     */
+    private $sliders;
     
     /**
      * Conference constructor.
@@ -160,6 +165,7 @@ class Conference
         $this->registrations = new ArrayCollection();
         $this->dateimport = new ArrayCollection();
         $this->programs = new ArrayCollection();
+        $this->sliders = new ArrayCollection();
     }
     /**
      * Get id
@@ -695,5 +701,39 @@ class Conference
     public function getResponsible()
     {
         return $this->responsible;
+    }
+    
+
+    /**
+     * Add sliders
+     *
+     * @param \Wits\FrontBundle\Entity\Slider $sliders
+     * @return Conference
+     */
+    public function addSlider(\Wits\FrontBundle\Entity\Slider $sliders)
+    {
+        $this->sliders[] = $sliders;
+
+        return $this;
+    }
+
+    /**
+     * Remove sliders
+     *
+     * @param \Wits\FrontBundle\Entity\Slider $sliders
+     */
+    public function removeSlider(\Wits\FrontBundle\Entity\Slider $sliders)
+    {
+        $this->sliders->removeElement($sliders);
+    }
+
+    /**
+     * Get sliders
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getSliders()
+    {
+        return $this->sliders;
     }
 }

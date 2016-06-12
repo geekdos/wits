@@ -44,6 +44,7 @@ sonata_admin:
                     - wits_front.admin.registration
                     - wits_front.admin.informations
                     - wits_front.admin.sponsor
+                    - wits_front.admin.slider
 
             sonata.admin.group.participant:
                 label:           Gestion de Participant

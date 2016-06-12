@@ -22,12 +22,25 @@ sonata_media:
                 - sonata.media.provider.image
                 - sonata.media.provider.dailymotion
                 - sonata.media.provider.youtube
-                - sonata.media.provider.image
+
             formats:
                 abstract: { width: 100, quality: 100}
                 wide:     { width: 820, quality: 100}
                 small:    { width: 150, quality: 95}
                 big:      { width: 500, quality: 90}
+
+        slider:
+            providers:
+                - sonata.media.provider.image
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+
+            formats:
+                abstract: { width: 100, quality: 100}
+                wide:     { width: 820, quality: 100}
+                small:    { width: 150, quality: 95}
+                big:      { width: 500, quality: 90}
+                extra:    { width: 1080, quality: 720}
 
         Sponsorship:
             providers:
