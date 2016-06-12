@@ -1,34 +1,20 @@
-{#
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-#}
-
-<div class="sonata-blog-comment-container">
-    <h3>{{ 'title_comments'|trans({}, 'SonataNewsBundle') }}</h3>
-
-    <ul class="sonata-blog-comment-list">
-        {% for comment in pager.results %}
-            <li class="sonata-blog-comment">
-                <div class="sonata-blog-comment-name">
-                    <a href="{{ comment.url }}" target="new" rel="nofollow">{{ comment.name }}</a>
-                </div>
-                <div class="sonata-blog-comment-date">
-                    {{ comment.createdAt | format_date }}
-                </div>
-                <div class="sonata-blog-comment-message">
+<ul class="media-list">
+    {% for comment in pager.results %}
+        <li class="media">
+            <a class="pull-left" href="{{ comment.url }}" target="new" rel="nofollow">
+                <img class="media-object img-text" src="{{ asset('bundles/wits/assets/images/users/no-image.jpg') }}"
+                     alt="{{ comment.name }}" width="64">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">{{ comment.name }}</h4>
+                <p>
                     {{ comment.message }}
-                </div>
-            </li>
-        {% else %}
-            <li>{{ 'no_comments_available'|trans({}, 'SonataNewsBundle') }}</li>
-        {% endfor %}
-    </ul>
-</div>
+                </p>
+                <p class="text-muted">{{ comment.createdAt | format_date }}</p>
+            </div>
+        </li>
+    {% else %}
+        <li>{{ 'no_comments_available'|trans({}, 'SonataNewsBundle') }}</li>
+    {% endfor %}
+</ul>
+

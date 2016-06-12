@@ -3,6 +3,7 @@
 namespace Wits\FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
@@ -10,14 +11,15 @@ class DefaultController extends Controller
     {
 
         $posts = $this->getPostManager()->findAll();
-
+        return $this->renderArchive();
         //var_dump($this->getRequest()->get('edition'));die();
-        
+        /*
         return $this->render('WitsFrontBundle:Default:index.html.twig', 
             [
                 'posts' => $posts,
             ]    
         );
+        */
     }
     
     /**
@@ -50,12 +52,22 @@ class DefaultController extends Controller
             'route_parameters' => $this->getRequest()->get('_route_params')
         ), $parameters);
 
-        $response = $this->render(sprintf('SonataNewsBundle:Post:archive.%s.twig', $this->getRequest()->getRequestFormat()), $parameters);
+        $response = $this->render(sprintf('WitsFrontBundle:Default:index.%s.twig', $this->getRequest()->getRequestFormat()), $parameters);
 
         if ('rss' === $this->getRequest()->getRequestFormat()) {
             $response->headers->set('Content-Type', 'application/rss+xml');
         }
 
+
         return $response;
+    }
+
+
+    /**
+     * @return Response
+     */
+    public function archiveAction()
+    {
+        return $this->renderArchive();
     }
 }

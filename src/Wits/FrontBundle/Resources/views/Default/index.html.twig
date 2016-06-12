@@ -45,14 +45,57 @@
 {% block body %}
     <h1><i class="fa fa-newspaper-o"></i> NEWS AND ANNOUNCEMENTS</h1>
     <div class="row">
-        {% for post in posts %}
-        <div class="col-md-6">
-            <h3>{{ post.title }}</h3>
-            <p>
-                {{ post.abstract }}
-            </p>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body posts">
+                    <div class="row">
+                        {% for post in pager.getResults() %}
+                            <div class="col-md-6">
+                                <div class="post-item">
+                                    <div class="post-title">
+                                        <a href="{{ url('sonata_news_view', { 'permalink': sonata_news_permalink(post) }) }}">{{ post.title }}</a>
+                                    </div>
+                                    <div class="post-date"><span
+                                                class="fa fa-calendar"></span> {{ post.publicationDateStart | format_date }}
+                                        /
+                                        <a href="#">{{ 'comments_count'|trans({'%comments_count%': post.commentsCount }, 'SonataNewsBundle') }}</a>
+                                        /
+                                        <a href="#">{{ 'archive_author'|trans({'%author%': post.author }, 'SonataNewsBundle') }}</a>
+                                    </div>
+                                    <div class="post-text">
+                                        {% media post.image, 'big' %}
+                                        <p>
+                                            {{ post.abstract }}
+                                        <p>
+                                    </div>
+                                    <div class="post-row">
+                                        <div class="post-info">
+                                            <span class="fa fa-thumbs-up"></span> 15 - <span class="fa fa-eye"></span>
+                                            15,332 - <span class="fa fa-star"></span> 322
+                                        </div>
+                                        <a href="{{ url('sonata_news_view', { 'permalink': sonata_news_permalink(post) }) }}"
+                                           class="btn btn-default btn-rounded pull-right">Read more &RightArrow;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            {{ 'no_post_found'|trans({}, 'SonataNewsBundle') }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pagination pagination-sm pull-right push-down-20">
+                <li {% if pager.page == pager.lastPage %} class="disabled"{% endif %}>
+                    <a href="{{ url(route, route_parameters|merge({'page': pager.nextpage})) }}"
+                       title="{{ 'link_previous_page'|trans({}, 'SonataNewsBundle') }}">«</a>
+                </li>
+                <li {% if pager.page == pager.firstPage %} class="disabled"{% endif %}>
+                    <a href="{{ url(route, route_parameters|merge({'page': pager.previouspage})) }}"
+                       title="{{ 'link_next_page'|trans({}, 'SonataNewsBundle') }}">»</a>
+                </li>
+            </ul>
         </div>
-        {% endfor %}
     </div>
 {% endblock %}
 {% block javascripts %}
