@@ -8,23 +8,22 @@ class ProgramController extends Controller
 {
     public function programAction()
     {
+        $edition = $this->getRequest()->get('edition');
         return $this->render('WitsFrontBundle:Program:program.html.twig', array(
-            'program' => $this->getRepo()
+            'program' => $this->getRepo($edition),
         ));
     }
 
-    private function getRepo(){
+    private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Program');
-        $committee = $repo->findOneBy(
-            array('online' => true)
-        );
+        $program = $repo->getProgramByConferenceEdition($edition);
 
-        if (!$committee) {
-            $committee = null;
+        if (!$program) {
+            $program = null;
         }
 
-        return $committee;
+        return $program;
     }
     
 }

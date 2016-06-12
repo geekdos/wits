@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class SubmissionsRepository extends EntityRepository
 {
+    public function getSumitionsByConferenceEdition($edition){
+        return $this->createQueryBuilder('s')
+            ->join('s.conference', 'c')
+            ->where('c.edition = :edition AND s.online = :status')
+            ->setParameter('edition', $edition)
+            ->setParameter('status', true)
+            ->getQuery()
+            ->getResult();
+    }
 }

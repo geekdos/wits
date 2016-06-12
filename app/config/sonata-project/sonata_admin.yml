@@ -28,7 +28,7 @@ sonata_admin:
             #- { position: right, type: sonata.block.service.text, settings: { content: "<div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'>Welcome!</h3></div><div class='panel-body'>You can customize this dashboard by editing the <code>sonata_admin.yml</code> file. The current dashboard presents the recent items from the NewsBundle and a non-statistical e-commerce information.</div></div>"} }
             - { position: right, type: sonata.news.block.recent_posts, settings: { title: Recent Posts, number: 7, mode: admin }}
             - { position: right, type: sonata.news.block.recent_comments, settings: { title: Recent Comments, number: 7, mode: admin }}
-            - { position: right, type: sonata.block.service.rss, settings: { title: IEEE News, url: http://ieee.com/blog/archive.rss, template: SonataAdminBundle:Block:block_rss_dashboard.html.twig }}
+            - { position: right, type: sonata.block.service.rss, settings: { title: IEEE News, url: https://csdl.computer.org/rss/cise.xml, template: SonataAdminBundle:Block:block_rss_dashboard.html.twig }}
 
         groups:
             sonata.admin.group.conference:

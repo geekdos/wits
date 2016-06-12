@@ -8,17 +8,16 @@ class RegistrationController extends Controller
 {
     public function registrationAction()
     {
+        $edition = $this->getRequest()->get('edition');
         return $this->render('WitsFrontBundle:Registration:registration.html.twig', array(
-            'registration' => $this->getRepo()
+            'registration' => $this->getRepo($edition),
         ));
     }
 
-    private function getRepo(){
+    private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Registration');
-        $registration = $repo->findBy(
-            array('online' => true)
-        );
+        $registration = $repo->getRegistrationByConferenceEdition($edition);
 
         if (!$registration) {
             $registration = null;

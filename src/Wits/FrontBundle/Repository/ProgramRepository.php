@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class ProgramRepository extends EntityRepository
 {
+    public function getProgramByConferenceEdition($edition){
+        return $this->createQueryBuilder('p')
+            ->join('p.conference', 'c')
+            ->where('c.edition = :edition AND p.online = :status ')
+            ->setParameter('edition', $edition)
+            ->setParameter('status', true)
+            ->getQuery()
+            ->getResult();
+    }
 }

@@ -12,4 +12,13 @@ use Doctrine\ORM\EntityRepository;
  */
 class RegistrationRepository extends EntityRepository
 {
+    public function getRegistrationByConferenceEdition($edition){
+        return $this->createQueryBuilder('r')
+            ->join('r.conference', 'c')
+            ->where('c.edition = :edition AND r.online = :status')
+            ->setParameter('edition', $edition)
+            ->setParameter('status', true)
+            ->getQuery()
+            ->getResult();
+    }
 }

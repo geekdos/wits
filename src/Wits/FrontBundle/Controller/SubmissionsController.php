@@ -8,17 +8,16 @@ class SubmissionsController extends Controller
 {
     public function callForSubmissionsAction()
     {
+        $edition = $this->getRequest()->get('edition');
         return $this->render('WitsFrontBundle:Submissions:call_for_submissions.html.twig', array(
-            'submissions' => $this->getRepo()
+            'submissions' => $this->getRepo($edition),
         ));
     }
 
-    private function getRepo(){
+    private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Submissions');
-        $submissions = $repo->findBy(
-            array('online' => true)
-        );
+        $submissions = $repo->getSumitionsByConferenceEdition($edition);
 
         if (!$submissions) {
             $submissions = null;

@@ -12,4 +12,12 @@ use Doctrine\ORM\EntityRepository;
  */
 class SponsorRepository extends EntityRepository
 {
+    public function getSponsorsByConferenceEdition($edition){
+        return $this->createQueryBuilder('s')
+            ->join('s.conference', 'c')
+            ->where('c.edition = :edition ')
+            ->setParameter('edition', $edition)
+            ->getQuery()
+            ->getResult();
+    }
 }
