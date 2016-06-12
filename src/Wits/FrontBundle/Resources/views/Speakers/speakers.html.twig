@@ -3,6 +3,11 @@
 {% block title %}Speakers{% endblock %}
 
 {% block body %}
-<h1>Speakers</h1>
-
+    <h1>Speakers</h1>
+    {% for speaker in speakers %}
+        <h1>{{ speaker.name }}</h1>
+        {{ speaker.content | raw }}
+    {% else %}
+        <h1 class="text-danger">Speakers not founded</h1>
+    {% endfor %}
 {% endblock %}

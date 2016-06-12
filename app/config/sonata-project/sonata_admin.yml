@@ -41,6 +41,8 @@ sonata_admin:
                     - wits_front.admin.important_dates
                     - wits_front.admin.submissions
                     - wits_front.admin.program
+                    - wits_front.admin.speakers
+                    - wits_front.admin.publication
                     - wits_front.admin.registration
                     - wits_front.admin.informations
                     - wits_front.admin.sponsor

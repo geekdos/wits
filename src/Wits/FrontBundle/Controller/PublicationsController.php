@@ -17,12 +17,12 @@ class PublicationsController extends Controller
     private function getRepo($edition){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository('WitsFrontBundle:Publication');
-        $program = $repo->getPulictionsByConferenceEdition($edition);
+        $publications = $repo->getPulictionsByConferenceEdition($edition);
 
-        if (!$program) {
-            $program = null;
+        if (!$publications) {
+            $publications = null;
         }
 
-        return $program;
+        return $publications;
     }
 }

@@ -12,7 +12,7 @@ use Doctrine\ORM\EntityRepository;
  */
 class SpeakersRepository extends EntityRepository
 {
-    public function getspeakersByConferenceEdition($edition){
+    public function getSpeakersByConferenceEdition($edition){
         return $this->createQueryBuilder('s')
             ->join('s.conference', 'c')
             ->where('c.edition = :edition AND s.online = :status ')

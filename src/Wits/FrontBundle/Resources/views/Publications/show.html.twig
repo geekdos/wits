@@ -4,5 +4,10 @@
 
 {% block body %}
 <h1>Publications</h1>
-
+    {% for publication in publications %}
+        <h1>{{ publication.name }}</h1>
+        {{ publication.content | raw }}
+    {% else %}
+        <h1 class="text-danger">Publications not founded</h1>
+    {% endfor %}
 {% endblock %}
